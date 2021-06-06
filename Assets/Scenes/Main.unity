@@ -2549,7 +2549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4806e8809980164ca275cd65bc2a6c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 1.2
+  radius: 3
   InteractableTran: {fileID: 87938519}
 --- !u!135 &896757092
 SphereCollider:
