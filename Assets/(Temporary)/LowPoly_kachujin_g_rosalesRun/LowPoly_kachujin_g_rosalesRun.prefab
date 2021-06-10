@@ -1114,6 +1114,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1692434167503679720}
+  - component: {fileID: 996264484}
   m_Layer: 0
   m_Name: LowPoly_kachujin_g_rosalesRun
   m_TagString: Untagged
@@ -1137,6 +1138,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &996264484
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4702848399114748391}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 95a24f122ea3aae439b5bd0c9b3e671a, type: 3}
+  m_Controller: {fileID: 9100000, guid: c6e789b0528f5e04a9d3d5e2bce5a3f7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5142420671905471372
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,7 +1769,6 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

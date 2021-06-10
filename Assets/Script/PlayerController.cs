@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     {
         cam = Camera.main;
         motor = GetComponent<PlayerMotor>();
+        // movementMask = 1 << LayerMask.NameToLayer("Ground")| 1 << LayerMask.NameToLayer("UI");
+        movementMask = 1 << LayerMask.NameToLayer("Ground");
     }
 
 
@@ -24,8 +26,9 @@ public class PlayerController : MonoBehaviour
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-            if(Physics.Raycast(ray,out hit,100, movementMask))
+            if(Physics.Raycast(ray,out hit,100,1<<LayerMask.NameToLayer("Ground")))
             {
+                Debug.DrawRay(cam.transform.position, cam.transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow,10);
                 Debug.Log("µã»÷ÎïÌå"+hit.collider.name + "===" + hit.point);
                 motor.MoveToPoint(hit.point);
 
