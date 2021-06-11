@@ -181,9 +181,131 @@
         <e p="Script" t="Include">
           <e p="CameraController.cs" t="Include" />
           <e p="ClaracterAnimator.cs" t="Include" />
+          <e p="FollowTarget.cs" t="Include" />
           <e p="Interactable.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="PlayerMotor.cs" t="Include" />
+          <e p="PlayerMove.cs" t="Include" />
+        </e>
+        <e p="VacuumShaders" t="Include">
+          <e p="Low Poly Mesh Generator" t="Include">
+            <e p="Example Scenes" t="Include">
+              <e p="Files" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Runtime_LowPolyMesh.cs" t="Include" />
+                  <e p="Runtime_LowPolyTerrain.cs" t="Include" />
+                  <e p="Runtime_MeshCombine.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Resources" t="Include">
+              <e p="Blur.shader" t="Include" />
+            </e>
+          </e>
+          <e p="Vertex Color Shaders" t="Include">
+            <e p="Shaders" t="Include">
+              <e p="cginc" t="Include">
+                <e p="VertexColor_ForwardBase.cginc" t="Include" />
+                <e p="VertexColor_PBR.cginc" t="Include" />
+                <e p="VertexColor_Shadow.cginc" t="Include" />
+                <e p="VertexColor_SpeedTreeCommon.cginc" t="Include" />
+                <e p="VertexColor_Unlit.cginc" t="Include" />
+                <e p="VertexColor_VertexLit.cginc" t="Include" />
+              </e>
+              <e p="Legacy Shaders" t="Include">
+                <e p="Alpha-Bumped.shader" t="Include" />
+                <e p="Alpha-BumpSpec.shader" t="Include" />
+                <e p="Alpha-Diffuse.shader" t="Include" />
+                <e p="Alpha-Glossy.shader" t="Include" />
+                <e p="Alpha-Parallax.shader" t="Include" />
+                <e p="Alpha-ParallaxSpec.shader" t="Include" />
+                <e p="AlphaTest-Bumped.shader" t="Include" />
+                <e p="AlphaTest-BumpSpec.shader" t="Include" />
+                <e p="AlphaTest-Diffuse.shader" t="Include" />
+                <e p="AlphaTest-Glossy.shader" t="Include" />
+                <e p="Illumin-Bumped.shader" t="Include" />
+                <e p="Illumin-BumpSpec.shader" t="Include" />
+                <e p="Illumin-Diffuse.shader" t="Include" />
+                <e p="Illumin-Glossy.shader" t="Include" />
+                <e p="Illumin-Parallax.shader" t="Include" />
+                <e p="Illumin-ParallaxSpec.shader" t="Include" />
+                <e p="Normal-Bumped.shader" t="Include" />
+                <e p="Normal-BumpSpec.shader" t="Include" />
+                <e p="Normal-Diffuse.shader" t="Include" />
+                <e p="Normal-DiffuseDecal.shader" t="Include" />
+                <e p="Normal-DiffuseDetail.shader" t="Include" />
+                <e p="Normal-Glossy.shader" t="Include" />
+                <e p="Normal-Parallax.shader" t="Include" />
+                <e p="Normal-ParallaxSpec.shader" t="Include" />
+                <e p="Reflect-Bumped.shader" t="Include" />
+                <e p="Reflect-BumpSpec.shader" t="Include" />
+                <e p="Reflect-Diffuse.shader" t="Include" />
+                <e p="Reflect-Glossy.shader" t="Include" />
+                <e p="Reflect-Parallax.shader" t="Include" />
+                <e p="Reflect-ParallaxSpec.shader" t="Include" />
+              </e>
+              <e p="One Directional Light" t="Include">
+                <e p="Bumped Specular.shader" t="Include" />
+                <e p="Bumped.shader" t="Include" />
+                <e p="Cutout 2Sided Bumped Specular.shader" t="Include" />
+                <e p="Cutout 2Sided Bumped.shader" t="Include" />
+                <e p="Cutout 2Sided Diffuse.shader" t="Include" />
+                <e p="Cutout 2Sided Specular.shader" t="Include" />
+                <e p="Cutout Simple Bumped Specular.shader" t="Include" />
+                <e p="Cutout Simple Bumped.shader" t="Include" />
+                <e p="Cutout Simple Diffuse.shader" t="Include" />
+                <e p="Cutout Simple Specular.shader" t="Include" />
+                <e p="Diffuse.shader" t="Include" />
+                <e p="Specular.shader" t="Include" />
+                <e p="Transparent 2Sided Bumped Specular.shader" t="Include" />
+                <e p="Transparent 2Sided Bumped.shader" t="Include" />
+                <e p="Transparent 2Sided Diffuse.shader" t="Include" />
+                <e p="Transparent 2Sided Specular.shader" t="Include" />
+                <e p="Transparent Simple Bumped Specular.shader" t="Include" />
+                <e p="Transparent Simple Bumped.shader" t="Include" />
+                <e p="Transparent Simple Diffuse.shader" t="Include" />
+                <e p="Transparent Simple Specular.shader" t="Include" />
+                <e p="Transparent ZWrite Bumped Specular.shader" t="Include" />
+                <e p="Transparent ZWrite Bumped.shader" t="Include" />
+                <e p="Transparent ZWrite Diffuse.shader" t="Include" />
+                <e p="Transparent ZWrite Specular.shader" t="Include" />
+              </e>
+              <e p="PBR" t="Include">
+                <e p="Bumped.shader" t="Include" />
+                <e p="Cutout 2Sided Bumped.shader" t="Include" />
+                <e p="Cutout 2Sided Diffuse.shader" t="Include" />
+                <e p="Cutout Simple Bumped.shader" t="Include" />
+                <e p="Cutout Simple Diffuse.shader" t="Include" />
+                <e p="Diffuse.shader" t="Include" />
+                <e p="Transparent 2Sided Bumped.shader" t="Include" />
+                <e p="Transparent 2Sided Diffuse.shader" t="Include" />
+                <e p="Transparent Simple Bumped.shader" t="Include" />
+                <e p="Transparent Simple Diffuse.shader" t="Include" />
+                <e p="Transparent ZWrite Bumped.shader" t="Include" />
+                <e p="Transparent ZWrite Diffuse.shader" t="Include" />
+              </e>
+              <e p="Resources" t="Include">
+                <e p="Cutout.shader" t="Include" />
+                <e p="Diffuse.shader" t="Include" />
+                <e p="Transparent.shader" t="Include" />
+              </e>
+              <e p="SpeedTree" t="Include">
+                <e p="SpeedTree.shader" t="Include" />
+              </e>
+              <e p="Unlit" t="Include">
+                <e p="Addative Simple.shader" t="Include" />
+                <e p="Addative ZWrite.shader" t="Include" />
+                <e p="Cutout 2Sided.shader" t="Include" />
+                <e p="Cutout Simple.shader" t="Include" />
+                <e p="Multiply Simple.shader" t="Include" />
+                <e p="Multiply ZWrite.shader" t="Include" />
+                <e p="Opaque.shader" t="Include" />
+                <e p="Transparent 2Sided.shader" t="Include" />
+                <e p="Transparent Simple.shader" t="Include" />
+                <e p="Transparent ZWrite.shader" t="Include" />
+              </e>
+            </e>
+          </e>
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
